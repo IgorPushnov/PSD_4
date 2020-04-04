@@ -1,0 +1,41 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+h1, h2, h4, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+.header {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		display: block;
+		width: 137px;
+		height: 28px;
+		background-image: url(../img/svg/Logo.svg);
+	}
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item {
+		text-decoration: none;
+		margin-left: 15px;
+	}
+}
