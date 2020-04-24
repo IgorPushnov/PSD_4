@@ -23,7 +23,9 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
@@ -45,12 +47,15 @@
                 </div>
                 <div class="header__page">
                     <div class="header__book">
-                        <div class="header__demo"></div>            
-                        <div class="header__info">
-                            <p class="header__name">- By Emma Anderson</p>
-                            <h1 class="header__title">BUKEE: THE BOOK<span class="header__description">A room without books is like a body without a soul</span></h1>
-                            <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="header__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        <div class="header__demo">
+                            <h2 class="header__title">Good book<span class="header__subtitle">Don’t judge a book by its cover</span></h2>
+                            <p class="header__author">- By Emma Anderson</p>
+                        </div>            
+                        <div class="info">
+                            <p class="info__name">- By Emma Anderson</p>
+                            <h1 class="info__title">BUKEE: THE BOOK<span class="info__description">A room without books is like a body without a soul</span></h1>
+                            <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="info__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
                             <a class="btn" href="">Buy this book - $15.00</a>
                             <small>* Some conditions may applicable</small>
                         </div>
@@ -61,14 +66,23 @@
         <div class="page">
             <div class="wrap">
                 <div class="page__autor">
-                    <div class="header__info">
-                        <p class="header__name">- Book Author</p>
-                        <h1 class="header__title">Emma Anderson<span>A room without books is like a body without a soul</span></h1>
-                        <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="header__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                    <div class="info">
+                        <p class="info__name info__name--page">- Book Author</p>
+                        <h1 class="info__title">Emma Anderson<span class="info__description">A room without books is like a body without a soul</span></h1>
+                        <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="info__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut</p>
                         <a class="btn" href="">Read full biography</a>
                     </div>
-                    <div></div>
+                    <div class="page__img">
+                        <svg class="page__svg" width='435' height='558'>
+                            <LinearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="558">
+                                <stop offset="0" style="stop-color: #446a87"/>
+                                <stop offset="1" style="stop-color: #59c2ae"/>
+                            </LinearGradient>
+                            <rect width='435' height='558' x='0' y='0' fill="url(#gradient)"></rect>
+                        </svg>
+                        <img class="page__photo" src="../img/photo1.png" alt="">
+                    </div>
                 </div>
                 <div class="page__counter">
                     <p class="page__text"><span class="page__namber">12</span>Total published books</p>
@@ -77,39 +91,112 @@
                 </div>
             </div>
         </div>
-        <div class="contents">
+        <div class="contents contents--gray">
             <div class="wrap">
                 <h2 class="contents__title">Book Contents</h2>
                 <p class="contents__subtitle">Let’s see what we have covered in the book</p>
                 <div class="contents__about">
                     <div class="contents__block">
                         <h3 class="contents__book">About the book</h3>
-                        <p class="contents__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <p class="contents__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
                         <div class="contents__box">
                             <p class="contents__featured">Featured in:</p>
                             <div class="contents__icon">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
+                                <a class="contents__fab" href=""><i class="fab fa-stack-overflow"></i></a>
+                                <a class="contents__fab" href=""><i class="fab fa-amazon"></i></a>
+                                <a class="contents__fab" href=""><i class="fab fa-sass"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="contents__table">
                         <h3 class="contents__name">Table of contents</h3>
                         <ol class="contents__list">
-                            <li class="contents_item">1. Lorem ipsum dolor sit amet</li>
-                            <li class="contents_item">2. Consectetur adipisicing elit</li>
-                            <li class="contents_item">3. Labore et dolore magna</li>
-                            <li class="contents_item">4. Consectetur adipisicing elit</li>
-                            <li class="contents_item">5. Labore et dolore magna</li>
-                            <li class="contents_item">6.  Lorem ipsum dolor sit amet</li>
-                            <li class="contents_item">7. Consectetur adipisicing elit</li>
-                            <li class="contents_item">8. Labore et dolore magna</li>
-                            <li class="contents_item">9. Consectetur adipisicing elit</li>
-                            <li class="contents_item">10. Labore et dolore magna</li>
+                            <li class="contents__item">Lorem ipsum dolor sit amet</li>
+                            <li class="contents__item">Consectetur adipisicing elit</li>
+                            <li class="contents__item">Labore et dolore magna</li>
+                            <li class="contents__item">Consectetur adipisicing elit</li>
+                            <li class="contents__item">Labore et dolore magna</li>
+                            <li class="contents__item">Lorem ipsum dolor sit amet</li>
+                            <li class="contents__item">Consectetur adipisicing elit</li>
+                            <li class="contents__item">Labore et dolore magna</li>
+                            <li class="contents__item">Consectetur adipisicing elit</li>
+                            <li class="contents__item">Labore et dolore magna</li>
                         </ol>
-                        <button class="btn">More</button>
+                        <button class="btn btn--contents">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <div class="wrap">
+                <h2 class="other__title">Other Books</h2>
+                <p class="other__subtitle">Some books you might be interested in</p>
+                <div class="other__block">
+                    <div class="other__item">
+                        <div class="other__demo">
+                            <h2 class="other__name">Inception<span class="other__parag">Books are the best friends</span></h2>
+                            <p class="other__author">- By Emma Anderson</p>
+                        </div> 
+                        <div class="other__box">
+                            <h3 class="other__description">Inception</h3>
+                            <p class="other__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="other__more" href="">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="other__item">
+                        <div class="other__demo">
+                            <h2 class="other__name">Fight Club<span class="other__parag">Books are the best friends</span></h2>
+                            <p class="other__author">- By Emma Anderson</p>
+                        </div> 
+                        <div class="other__box">
+                            <h3 class="other__description">Fight Club</h3>
+                            <p class="other__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="other__more" href="">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="other__item">
+                        <div class="other__demo">
+                            <h2 class="other__name">Daredevils<span class="other__parag">Books are the best friends</span></h2>
+                            <p class="other__author">- By Emma Anderson</p>
+                        </div> 
+                        <div class="other__box">
+                            <h3 class="other__description">Daredevils</h3>
+                            <p class="other__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="other__more" href="">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn--other">Browse all books</button>
+            </div>
+        </div>
+        <div class="page">
+            <div class="wrap">
+                <div class="page__autor">
+                    <div class="page__img">
+                        <svg class="page__svg page__svg--left" width='435' height='704'>
+                            <LinearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704">
+                                <stop offset="0" style="stop-color: #446a87"/>
+                                <stop offset="1" style="stop-color: #59c2ae"/>
+                            </LinearGradient>
+                            <rect width='435' height='704' x='0' y='0' fill="url(#gradient)"></rect>
+                        </svg>
+                        <img class="page__photo page__photo--left" src="../img/photo2.png" alt="">
+                    </div>
+                    <div class="info info--width">
+                        <p class="info__name info__name--page">- Emma Anderson</p>
+                        <h1 class="info__title">Upcoming Events<span class="info__description">Some upcoming events you might be interested in</span></h1>
+                        <div class="info__item">
+                            <p class="info__date">November 21, 2018</p>
+                            <h4 class="info__name">Book signing - San francisco, CA</h4>
+                            <p class="info__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <a class="btn btn--page" href="">Register</a>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__date">November 21, 2018</p>
+                            <h4 class="info__name">Book reading - Los Angeles, CA</h4>
+                            <p class="info__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <a class="btn btn--page" href="">Register</a>
+                        </div>                      
                     </div>
                 </div>
             </div>
